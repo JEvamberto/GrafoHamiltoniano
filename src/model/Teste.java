@@ -17,7 +17,12 @@ public class Teste {
         grafo.addIncidencia(0, 1);
         grafo.addIncidencia(1, 2);
         grafo.addIncidencia(2, 0);
+        //Medir tempo de execução
+        long tempoEmMilisSegundosInicial=System.currentTimeMillis();
         grafo.EhHamiltoniano();
+        long tempoEmMilisSegundosFinal=System.currentTimeMillis()-tempoEmMilisSegundosInicial;
+        //Devide por Mil
+        System.out.println("Tempo de execução:"+tempoEmMilisSegundosFinal+"  MiliSegundos");
         
         
     }
